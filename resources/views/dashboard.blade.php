@@ -9,14 +9,7 @@ $banners = \App\Models\Banner::orderByDesc('id')->get();
 <div style="width:100%;  padding: 1rem; text-align: center;">
 <img src="/logo-radio.png" alt="" width="100px">
 
-
-
 </div>
-
-
-
-
-
 
 <div style="width:100%;  padding: 1rem; text-align: right;">
 
@@ -54,10 +47,10 @@ Salvar
 
 
 <div style="background:#111827;padding:1.25rem;border-radius:1rem;margin-top:1rem;">
-<h2 style="margin-top:0;">Banners 720×90</h2>
+<h2 style="margin-top:0;">Banners 720×100</h2>
 <form method="POST" action="{{ route('admin.banners.store') }}" enctype="multipart/form-data">
 @csrf
-<label>Enviar imagem (720×90)</label>
+<label>Enviar imagem (720×100)</label>
 <input type="file" name="banners[]" multiple accept="image/*" required>
 <label>Link (opcional)</label>
 <input type="url" name="link_url" placeholder="https://exemplo.com" style="width:100%;padding:.5rem;margin:.25rem 0;border-radius:.4rem;border:1px solid #334155;background:#0b1220;color:#e2e8f0">
